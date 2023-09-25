@@ -25,6 +25,7 @@ function tickets(day, age) {
     }else{
         console.log('Error!')
     }
+    
 }
 tickets('Weekday', 42);
 // tickets('Holiday',-12);

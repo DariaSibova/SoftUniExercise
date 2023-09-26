@@ -33,7 +33,7 @@ function solve(count, type, day) {
 
     let totalPrice = count * singularPrice;
 
-    if(type == 'Student' && count >= 30){
+    if(type == 'Students' && count >= 30){
         totalPrice *= 0.85;
     }else if(type == 'Business' && count >= 100){
         let discountedPrice = 10 * singularPrice;
@@ -41,8 +41,8 @@ function solve(count, type, day) {
     }else  if (type == 'Regular' && (count >= 10 && count <=20)){
         totalPrice *= 0.95;
     }
-
+    
     console.log(`Total price: ${totalPrice.toFixed(2)}`)
 }
-solve(30, "Students", "Sunday");
-// solve(40,"Regular","Saturday")
+// solve(30, "Students", "Sunday");
+solve(40,"Regular","Saturday")

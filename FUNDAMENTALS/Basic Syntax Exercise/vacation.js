@@ -11,7 +11,7 @@ function solve(count, type, day) {
                 singularPrice = 15;
             }
          break;
-        case 'Satuday':
+        case 'Saturday':
             if (type == 'Students') {
                 singularPrice = 9.80;
             } else if (type == 'Business') {

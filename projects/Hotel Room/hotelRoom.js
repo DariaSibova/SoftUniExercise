@@ -1,0 +1,6 @@
+function hotelRoom(input){
+    
+
+}
+
+hotelRoom

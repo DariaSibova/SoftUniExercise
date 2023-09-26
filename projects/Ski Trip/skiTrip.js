@@ -1,0 +1,5 @@
+function skiTrip(input){
+    
+
+}
+skiTrip

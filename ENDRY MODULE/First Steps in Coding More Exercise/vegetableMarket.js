@@ -10,7 +10,7 @@ let allPriceForFruit = priceForFruit * allKiloForFruit;
 let all = allPriceForVegetables + allPriceForFruit;
 
 let priceInEuro = all / 1.94
-console.log(priceInEuro)
+console.log(priceInEuro.toFixed(2))
 
 
 

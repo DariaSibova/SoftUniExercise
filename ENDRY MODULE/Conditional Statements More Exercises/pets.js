@@ -10,7 +10,9 @@ let allFoodInKiloForDay = foodPerDayForCat + foodPerDayForDog + gramToKilo ;
 let allFoodInDays = allFoodInKiloForDay * days;
 
 if(food > allFoodInDays ){
-console.log(`${Math.floor(food - allFoodInDays)} kilos of food left`)
+console.log(`${Math.floor(food - allFoodInDays)} kilos of food left.`)
+}else {
+    console.log(`${Math.ceil(allFoodInDays - food)} more kilos of food are needed.`)
 }
 }
 

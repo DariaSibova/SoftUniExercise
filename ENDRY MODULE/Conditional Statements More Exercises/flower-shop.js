@@ -17,7 +17,7 @@ let present = priceForPresent - taxPrice;
 if(taxPrice >= priceForPresent){
     console.log(`She is left with ${Math.floor(taxPrice - priceForPresent)} leva.`)
 }else {
-    console.log(`She will have to borrow ${Math.ceil(present)} leva. `)
+    console.log(`She will have to borrow ${Math.ceil(present)} leva.`)
 }
 
 

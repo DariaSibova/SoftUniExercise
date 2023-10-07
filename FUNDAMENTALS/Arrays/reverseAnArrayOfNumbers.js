@@ -16,7 +16,7 @@
 // //print result on single line
 // console.log(result.join(' '))
 // }
-
+//----------------------------------------
 // function solve(n,nums){
 //     let result = '';
 //     for(let i = n - 1;i >= 0;i--){
@@ -24,18 +24,24 @@
 //     }
 //     console.log(result)
 // }
+//--------------------------------------
+// function solve(n,nums){
+//     //create new array
 
+//     //copy n values in reversed
+//     let reversed = [];
+//     for(let i = n - 1;i >= 0;i--){
+//         reversed.push(nums[i]);
+//     }
+
+//     //print result on single line 
+//     console.log(reversed.join(' '))
+// }
+//-----------------------------------------------
 function solve(n,nums){
-    //create new array
-
-    //copy n values in reversed
-    let reversed = [];
-    for(let i = n - 1;i >= 0;i--){
-        reversed.push(nums[i]);
-    }
-
-    //print result on single line 
-    console.log(reversed.join(' '))
+    let result = nums.slide(0,n);
+    let reversed=result.reverse();
+    console.log(reversed.join(' '));
 }
 
 solve(3,[10,20,30,40,50])

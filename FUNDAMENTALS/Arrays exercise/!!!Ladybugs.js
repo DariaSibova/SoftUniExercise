@@ -37,7 +37,14 @@ function solve(arr) {
       let newIdx = ladybugIdx - flyLength;
 
       if (newIdx >= 0) {
-        field[newIdx] = 1;
+        while (field[newIdx] == 1){
+          newIdx -= flyLength;
+        }
+
+        if(newIdx >= 0){
+          field[newIdx] = 1;
+        }
+      
       }
     }
   }

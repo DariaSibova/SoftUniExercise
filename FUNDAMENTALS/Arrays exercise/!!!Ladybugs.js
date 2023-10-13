@@ -9,6 +9,14 @@ function solve(arr) {
   let fieldSize = arr[0];
   let ladybugIdxs = arr[1].split(" ").map(Number);
   let field = [];
+
+  for (let i = 0; i < fieldSize; i++){
+    if(ladybugIdxs.includes(i)){
+      field[i] = 1;
+    } else {
+      field[i] = 0;
+    }
+  }
 }
 
 solve([3, "0 1", "0 right 1", "2 right 1"]);

@@ -5,10 +5,12 @@
 // While ladybug lands an another -> continues in same direction with same length
 // If out of field -> it's gone
 
-function solve(arr){
-
+function solve(arr) {
+  let fieldSize = arr[0];
+  let ladybugIdxs = arr[1].split(" ").map(Number);
+  let field = [];
 }
 
-solve([3,'0 1','0 right 1','2 right 1']);
+solve([3, "0 1", "0 right 1", "2 right 1"]);
 // solve([ 3, '0 1 2', '0 right 1', '1 right 1', '2 right 1'])
 // solve([ 5, '3', '3 left 2', '1 left -2'])

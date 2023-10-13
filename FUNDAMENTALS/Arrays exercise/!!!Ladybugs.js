@@ -2,7 +2,9 @@
 // No ledybug -> 0 | ladybug -> 1
 // Given initial ladybugs indeces -> size 3, indeces '0 2' -> [1,0,1]
 // Commands -> "{ladybug index} {direction} {fly length}" -> "0 right 2"
-// If ladybug lands an another -> continues in same direction with same length
+// While ladybug lands an another -> continues in same direction with same length
+// If out of field -> it's gone
+
 function solve(arr){
 
 }

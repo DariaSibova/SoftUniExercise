@@ -46,8 +46,22 @@ function solve(arr) {
         }
       
       }
+    }else {
+      let newIdx = ladybugIdx + flyLength;
+
+      if (newIdx < field.length) {
+        while (field[newIdx] == 1){
+          newIdx += flyLength;
+        }
+
+        if(newIdx < field.length){
+          field[newIdx] = 1;
+        }
+      
+      }
     }
   }
+  console.log(field.join(' '))
 }
 
 solve([3, "0 1", "0 right 1", "2 right 1"]);

@@ -4,6 +4,7 @@
 // Commands -> "{ladybug index} {direction} {fly length}" -> "0 right 2"
 // While ladybug lands an another -> continues in same direction with same length
 // If out of field -> it's gone
+// If no ladybugs on given index -> nothing happens
 
 function solve(arr) {
   let fieldSize = arr[0];
@@ -16,6 +17,15 @@ function solve(arr) {
     } else {
       field[i] = 0;
     }
+  }
+  
+  for ( let j = 2; j < arr.length; j++){
+    let command = arr[j];
+    let tokens = command.split(' ');
+
+    let ledybugIdx = Number(tokens[0]);
+    let direction = tokens[1];
+    let flyLength = Number(tokens[2]);
   }
 }
 

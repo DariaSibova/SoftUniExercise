@@ -1,13 +1,13 @@
 function solve(arr) {
   let roomsInfo = arr[0];
-  let rooms = roomsInfo.split("|");
+  let rooms = roomsInfo.split('|');
 
   let health = 100;
   let coins = 0;
   let bestRoom = 1;
 
   for (let room of rooms) {
-    let tokens = room.split(" ");
+    let tokens = room.split(' ');
     console.log(tokens);
 
     let command = tokens[0];
@@ -38,7 +38,7 @@ function solve(arr) {
   if (health > 0) {
     console.log("You've made it!");
     console.log(`Coins: ${coins}`);
-    console.log(` Health: ${health}`);
+    console.log(`Health: ${health}`);
   }
 }
 

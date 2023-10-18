@@ -1,5 +1,4 @@
 function solve(input) {
-
     //initialize state
     let hp = 100;
     let loot = 0;
@@ -15,59 +14,37 @@ function solve(input) {
     // -- otherwise,fight monster
 
 for(let i = 0; i < rooms.length;i++){
-    let room = rooms[0].split(' ');
+    let room = rooms[i].split(' ');
     let type = room[0];
     let num = Number(room[1]);
 
     
     if (type == "potion") {
-        console.log('room with potion');
-        // let newHP = health + num <= 100 ? num : 100 - health;
-        // health += newHP;
-        // console.log(`You healed for ${newHP} hp.`);
-        // console.log(`Current health: ${health} hp.`);
-      } else if (type == "chest") {
-        console.log('room with chest');
-        // coins += num;
-        // console.log(`You found ${num} coins.`);
-      } else {
-        console.log('room with monster');
-        // health -= num;
-}
-   
-
-    // if successful,print result
-
-
-    let bestRoom = 1;
-  
-  
-  
-    for (let room of rooms) {
-      let tokens = room.split(' ');
-      console.log(tokens);
-  
-      let command = tokens[0];
-      let num = Number(tokens[1]);
-  
-      
-  
-        if (health > 0) {
-          console.log(`You slayed ${command}.`);
-        } else {
-          console.log(`You died! Killed by ${command}.`);
-          console.log(`Best room: ${bestRoom}`);
-          break;
+        if(hp + num > 100){
+          num = 100 - hp;
         }
-      }
-      bestRoom++;
-    }
-  
-    if (health > 0) {
+        hp += num;
+        console.log(`You healed for ${num} hp.`)
+        console.log(`Current health: ${hp} hp.`);
+      } else if (type == "chest") {
+       loot += num;
+        console.log(`You found ${num} bitcoins.`);
+      } else {
+        hp -= num;
+        if(hp <= 0){
+          console.log(`You died! Killed by ${type}.`);
+          console.log(`Best room: ${i + 1}`);
+          return;
+        }else {
+          console.log(`You slayed ${type}.`);
+        }
+}
+}
+    // if successful,print result
       console.log("You've made it!");
-      console.log(`Coins: ${coins}`);
-      console.log(`Health: ${health}`);
-    }
+      console.log(`Bitcoins: ${loot}`);
+      console.log(`Health: ${hp}`);
+   
   }
   
   solve(["rat 10|bat 20|potion 10|rat 10|chest 100|boss 70|chest 1000"]);

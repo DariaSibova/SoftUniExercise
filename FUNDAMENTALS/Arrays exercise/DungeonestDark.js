@@ -6,6 +6,8 @@ function solve(arr) {
   let coins = 0;
   let bestRoom = 1;
 
+
+
   for (let room of rooms) {
     let tokens = room.split(' ');
     console.log(tokens);

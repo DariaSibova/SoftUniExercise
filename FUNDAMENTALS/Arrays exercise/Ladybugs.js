@@ -1,3 +1,5 @@
+// TODO
+
 // Given field size | size 3 -> [-,-,-] | size 5 [-,-,-,-,-]
 // No ledybug -> 0 | ladybug -> 1
 // Given initial ladybugs indeces -> size 3, indeces '0 2' -> [1,0,1]
@@ -7,6 +9,8 @@
 // If no ladybugs on given index -> nothing happens
 
 function solve(arr) {
+  
+
   let fieldSize = arr[0];
   let ladybugIdxs = arr[1].split(" ").map(Number);
   let field = [];

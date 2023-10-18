@@ -1,10 +1,22 @@
 function palidromeInts(arr){
-    for (let num of arr){
-        let numStr = String(num);
-        let reversedNumStr = numStr.split('').reverse().join('');
-        console.log(numStr == reversedNumStr);
+    for(let num of arr){
+        let reversedNumStr = num.toString().split('').reverse().join('');
     }
 }
+
+
+
+
+
+//----------------------------------------
+
+// function palidromeInts(arr){
+//     for (let num of arr){
+//         let numStr = String(num);
+//         let reversedNumStr = numStr.split('').reverse().join('');
+//         console.log(numStr == reversedNumStr);
+//     }
+// }
 
 
 //-------------------------------------

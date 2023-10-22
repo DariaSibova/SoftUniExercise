@@ -36,6 +36,6 @@ if (priceForOnePerson <= budget){
 }
 }
 
-// cookingMasterclass([50,2,1.0,0.10,10.0]);
-// cookingMasterclass([100,25,4.0,1.0,6.0])
-cookingMasterclass([946,20,12.05,0.42,27.89])
+// cookingMasterclass([50,2,1.0,0.10,10.0]); // Items purchased for 34.00$.
+// cookingMasterclass([100,25,4.0,1.0,6.0]) // 410.00$ more needed.
+cookingMasterclass([946,20,12.05,0.42,27.89]) // 0.16$ more needed.

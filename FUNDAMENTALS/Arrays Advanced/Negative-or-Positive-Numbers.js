@@ -5,8 +5,11 @@ function solve(arr){
     //-check if current number is negative
     //-- if yes,add to beginning
     //--otherwise,add to end
+
+    
     for(let numAsString of arr){
         let num = Number(numAsString);
+
         if(num < 0){
             result.unshift(num);
 
@@ -14,7 +17,18 @@ function solve(arr){
             result.push(num);
         }
     }
-    //print result
-    console.log(result)
+
+    // for(let i = 0;i < arr.length;i++){
+    //     if(arr[i] < 0){
+    //        result.unshift(arr[i]);
+    //     } else {
+    //         result.push(arr[i]);
+    //     }
+    // }
+    // console.log(result.join('\n'))
+    for(let num of result){
+        console.log(num)
+    }
+
 }
 solve(['7', '-2', '8', '9']);

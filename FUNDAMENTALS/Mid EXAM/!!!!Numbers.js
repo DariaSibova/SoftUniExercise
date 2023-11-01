@@ -3,7 +3,7 @@
 // command replace = you should replace the first occu.
 //command collapse 
 
-function numbers(str,Add,"1") {
+function numbers(str, commands,value) {
     if(str){
         let nums = str.split(' ');//.map(Number) 
     }
@@ -11,36 +11,21 @@ function numbers(str,Add,"1") {
     let result = Array;
     
     if (commands === 'Add'){
-        nums.push(1);
-        result = nums
-        console.log(result)
+        nums.push(value);
+        result = nums.join()
     }
 
-    // for (let i = 0; i < commands.length; i++) {
-    //   let currentCommand = commands[i].split(' ');
-    //   let action = currentCommand[0];
-  
-    //   if (action === 'Add') {
-    //     let numToAdd = Number(currentCommand[1]);
-    //     nums.push(numToAdd);
-    //   } else if (action === 'Remove') {
-    //     let numToRemove = Number(currentCommand[1]);
-    //     nums = nums.filter(num => num !== numToRemove);
-    //   } else if (action === 'Replace') {
-    //     let numToReplace = Number(currentCommand[1]);
-    //     let replacementNum = Number(currentCommand[2]);
-    //     let index = nums.indexOf(numToReplace);
-    //     if (index !== -1) {
-    //       nums[index] = replacementNum;
-    //     }
-    //   } else if (action === 'Collapse') {
-    //     let threshold = Number(currentCommand[1]);
-    //     nums = nums.filter(num => num >= threshold);
-    //   }
-    // }
-    // console.log(nums.join(' '));
-  }
+    for(let n of nums){
+        if (commands === 'Remove'){
+            if(n != value){
+                    result.push(n)
+            }
 
+        }
+    }
+
+   
+  }
 
 numbers("1 4 5 19",
 "Add 1",

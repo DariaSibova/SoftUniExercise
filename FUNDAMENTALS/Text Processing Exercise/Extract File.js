@@ -6,7 +6,7 @@ function solve(path){
     let fileExtension = fileInfo.slice(lastDotIdx + 1);
 
     console.log(`File name: ${fileName}`);
-    console.log(`File extension: ${fileExtension}}`)
+    console.log(`File extension: ${fileExtension}`)
 
 }
 solve('C:\\Internal\\training-internal\\Template.pptx')

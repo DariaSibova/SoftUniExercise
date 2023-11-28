@@ -25,4 +25,5 @@ function solve ( arr){
     }
     console.log(`Total money spend: ${totalPrice.toFixed(2)}`);
 }
-solve()
+solve([ '>>Sofa<<312.23!3', '>>TV<<300!5', '>Invalid<<!5', 'Purchase' ]
+)

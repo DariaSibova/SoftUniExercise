@@ -61,3 +61,12 @@ function solve (input){
     // split text by substring 
     // save joined text by replaxement 
 }
+
+solve([
+    'heVVodar!gniV',
+    'ChangeAll:|:V:|:l',
+    'Reverse:|:!gnil',
+    'InsertSpace:|:5',
+    'Reveal'
+  ]
+  )

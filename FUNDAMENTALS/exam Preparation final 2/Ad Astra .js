@@ -10,7 +10,7 @@ function slove(arr){
     let products = [];
 
     let matches = str.matchAll(pattern);
-
+console.log(matches);
     for(let match of matches){
         let { name, expdate , kcal } = match.groups;
         kcal = Number(kcal);

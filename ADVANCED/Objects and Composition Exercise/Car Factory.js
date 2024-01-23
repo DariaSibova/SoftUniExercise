@@ -26,7 +26,9 @@ function solve(order){
     return result
 }
 
-console.log(solve({ model: 'VW Golf II',
+// console.log(solve({ model: 'VW Golf II',
+console.table(solve({ model: 'VW Golf II',
+
 
 power: 90,
 

@@ -1,4 +1,5 @@
 function subtract() {
+    debugger
     const firstNumRef = document.getElementById("firstNumber")
     const secondNumRef = document.getElementById("secondNumber")
     const resultRef = document.getElementById("result");

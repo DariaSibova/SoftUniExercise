@@ -12,6 +12,7 @@
        if(n < 4){
         return ".".repeat(n);
        }
+       
        if(this.length < n ){
         return this.toSpring();
        }
